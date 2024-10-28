@@ -40,7 +40,7 @@ my_dict = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 's
 'eighty', 90: 'ninety'}
 
 num = int(input("Enter a number between 1 and 99: "))
-if num <= 10 or num % 10 == 0:
+if num <= 20 or num % 10 == 0:
     print(my_dict[num])
 else:
     key1 = (num // 10) * 10
