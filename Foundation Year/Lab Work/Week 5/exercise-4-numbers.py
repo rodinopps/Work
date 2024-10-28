@@ -31,4 +31,5 @@ number = {
 }
 
 choice = int(input("Enter a number between 1 and 99: "))
-print(number[choice])
+if 1 <= choice <= 99: print(number[choice])
+else: print("WRONG")
