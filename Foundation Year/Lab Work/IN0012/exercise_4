@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Rodin</title>
+        <style>
+            p {
+                color: red;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        Hello this is my first page created in my course, using HTML code only
+        <p>
+            Integer lacus leo, mattis placerat felis id, aliquet luctus nibh.
+            Nullam pharetra, leo eget semper sollicitudin, purus turpis imperdiet odio, vel maximus nunc mi eget odio.
+            Curabitur faucibus tincidunt dignissim. Sed molestie lorem non elementum rutrum.
+            In egestas, diam rutrum tristique pharetra, libero libero ullamcorper sem, nec iaculis turpis ex et orci.
+        </p>
+        <p>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+         Duis justo magna, mattis quis diam sit amet, tincidunt cursus risus.
+         Sed maximus ligula at egestas fermentum.
+        </p>
+    </body>
+</html>
