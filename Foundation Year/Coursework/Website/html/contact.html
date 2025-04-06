@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"> <!--This defines the root of the HTML document and sets the language for the page is English. This is done for SEO.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover audiobooks, news, deals and other items. Check it out!">
+    <meta name="keywords" content="audiobooks, books, listening parties, podcasts, referrals, events">
+    <meta name = "author" content="Online Audio Books">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="../css/main.css"> <!--Link to main stylesheet.-->
+    <link rel="stylesheet" href="../css/contact.css"> <!--Link to contact stylesheet for this page.-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plaster&family=Kanit&family=Readex+Pro&display=swap">
+    <title>Online Audio Books - Contact Us</title> <!--Title for tab in browser.-->
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../images/logo.png" alt="Online Audio Books logo"> <!--Logo where the user can click it and navigate to the home page.-->
+        </a>
+        <div class="header-name">Online<br>Audio<br>Books</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="contact-us"> <!--Section for the contact request.-->
+            <h2>Contact Us</h2> <!--H2 header.-->
+            <p>This is the page for when you have any questions, refund requests, or anything else. Feel free to contact us!</p>
+    
+            <form id="contact-form"> <!--This is the form that the user can fill out-->
+                <label for="name">Full Name</label> <!--Label for the field for the name.-->
+                <input type="text" id="name" name="name" placeholder="Enter your name" required> <!--Input field for the name of the user.-->
+
+                <label for="email">Email Address</label> <!--Label for the field for the email address.-->
+                <input type="email" id="email" name="email" placeholder="Enter your email" required> <!--Input field for the email of the user.-->
+
+                <label for="reason">Reason</label> <!--Label for the field for the contact.-->
+                <select id="reason" name="reason" required> <!--Input field for the reason of the request.-->
+
+                    <option value="">Select a reason</option> <!--This is the default option for users. They are meant to select other options this is just a placeholder.-->
+                    <option value="question">General</option> <!--Option for general requests.-->
+                    <option value="refund">Refund</option> <!--Option for refund requests.-->
+                    <option value="support">Support</option> <!--Option for support requests.-->
+                    <option value="complaint">Complaint</option> <!--Option for complaint requests.-->
+                    <option value="report">Report</option> <!--Option for report requests.-->
+                    <option value="other">Other</option> <!--Option for other requests.-->
+
+                </select>
+
+                <label for="message">Message</label> <!--Label for the message field-->
+                <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea> <!--Area for the user to put their request.-->
+
+                <button type="submit">Send Message</button> <!--Submit button to send the request.-->
+            </form>
+
+            <p id="success-message"></p> <!--This is to display the success message after the submission.-->
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2025 Online Audio Books</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--This is the jQuery library for handling forms.-->
+    <script src="../js/request.js"></script> <!--To link the JS file-->
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+/* This is CSS for all H1 headers. */
+h1 {
+    text-align: center; /* This centers the main heading in terms of the x axis. */
+    padding: 10px;
+}
+
+/* This is CSS for all H2 headers in the daily news section class. */
+.daily-news h2 {
+    font-size: 20px; /* This sets font size to 20 pixels. */
+    color: #101010; 
+}
+
+/* This is CSS for all paragraphs in the daily news section class. */
+.daily-news p {
+    font-size: 15px; 
+    color: #101010; 
+}
+
+/* CSS for the daily news section. */
+.daily-news {
+    width: 95%; 
+    max-width: 1024px; 
+    margin: auto; /* This centers the section in terms of the x axis. */
+    padding: 25px; 
+}
+
+/* CSS for the article in daily news class section. */
+.daily-news article {
+    background-color: #FFFFFF; 
+    padding: 15px; 
+    border-radius: 10px; 
+    margin-bottom: 30px; 
+    transition: transform 0.5s; 
+}
+
+/* CSS for when the cursor hovers over the articles. */
+.daily-news article:hover {
+    transform: scale(1.01); 
+    background-color: #DAF5FF; 
+}

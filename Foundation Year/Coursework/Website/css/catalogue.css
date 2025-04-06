@@ -1,0 +1,102 @@
+/* This is CSS for the catalogue section using the class. */
+.catalogue {
+    width: 95%; /* The catalogue takes up 95% of the page width. */
+    padding: 20px; /* This sets a 20 pixel padding in the catalogue section. */
+    text-align: center; /* This centers the text inside of the catalogue. */
+}
+
+/* This is CSS for the H2 header in the catalogue section using the class. */
+.catalogue h2 {
+    font-size: 30px; /* This sets the font size to 30 pixels. */
+    font-weight: bold; /* This sets the text to bold. */
+    margin-bottom: 20px; /* This adds a 20 pixel margin. */
+    text-decoration: underline; /* This adds an underline under the H2 header. */
+    color: #79D4F7; /* This sets the text colour to blue. */
+    text-transform: uppercase; /* This sets the text to be uppercase. */
+    background-color: #FFFFFF;
+    border-radius: 10px; /* This rounds the corner of the background. */
+    width: 1024px; /* Sets the width to 1024 pixels */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* This is CSS for the table in the catalogue section using the class. */
+.catalogue table {
+    width: 95%; /* The catalogue table takes up 95% of the page width. */
+    border-collapse: collapse; /* This removes the spacing between borders in the table. */
+    margin: 20px auto; /* This sets a margin of 20 pixels on the top and bottom and centers it on the x axis. */
+    background-color: #FFFFFF; /* This sets the background colour to be white. */
+    color: #101010; /* This sets the text colour to black. */
+    border-radius: 10px; /* This creates round corners for the FAQ section. */
+    overflow: hidden; /* This prevents content from overflowing. */
+}
+
+/* This is CSS for the  header cells in the catalogue section using the class. */
+.catalogue th {
+    background: #101010; /* This sets the background colour to be black. */
+    color: #79D4F7; /* This sets the text colour to blue. */
+    font-weight: bold; /* This sets the text to bold. */
+    padding: 10px; /* This sets a 20 pixel padding. */
+    font-size: 20px; /* This sets the font size to 20 pixels. */
+    text-transform: uppercase; /* This sets the text to be uppercase. */
+}
+
+/* This is CSS for the images in the catalogue section using the class. */
+.book-image {
+    width: 75px;
+    height: auto;
+    transition: 0.5s;
+}
+
+/* This is CSS for when the user hovers the mouse over the images in the catalogue section using the class. */
+.book-image:hover {
+    transform: scale(1.1)
+}
+
+/* This is CSS for the header cells and cells in the catalogue section using the class. */
+.catalogue th, .catalogue td {
+    padding: 14px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+/* This is CSS for even rows in the catalogue section using the class. */
+.catalogue tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+/* This is CSS for odd rows in the catalogue section using the class. */
+.catalogue tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+/* This is CSS for the H2 headers in the catalogue section using the class. */
+.catalogue tr:hover {
+    background-color: #E6E6E6;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* This is CSS for the H2 headers in the catalogue section using the class. */
+.details-column {
+    text-align: left;
+}
+
+/* This is CSS for the buy buttons in the catalogue section using the class. */
+.buy-button {
+    background-color: #79D4F7;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+/* This is CSS for when the cursor hovers over the buttons in the catalogue section using the class. */
+.buy-button:hover {
+    background-color: #2CC4FF; /* This changes the colour to a darker colour. */
+}

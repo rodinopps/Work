@@ -1,0 +1,41 @@
+/* Some lines will not be commented due to duplicates and to make it esier to read and not have to be read multiple times. This applies to every page.
+/* CSS style for the about us section. */
+.about-us {
+    padding: 40px;
+    max-width: 1024px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+/* CSS style for the about us section. */
+.about-us h2 {
+    font-size: 35px; /* Font size 35 pixels */
+    color: #101010;
+}
+
+/* CSS style for the about us section. */
+.about-us p {
+    color: #101010;
+    text-align: justify;
+    padding: 10px;
+}
+
+/* CSS style for the about us section. */
+.about-us ul {
+    list-style: none; /* Removes the bullet points from the staff list */
+    padding: 0;
+}
+
+/* CSS style for the about us section. */
+.about-us ul li {
+    background: #101010;
+    width: 512px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+}

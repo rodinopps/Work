@@ -1,0 +1,68 @@
+/* CSS for the paragraph at the top of the review page. It is an introduction section. */
+.review-paragraph {
+    font-size: 25px; /* Sets the font size to 25 pixels */
+    text-align: center;
+    width: 1024px; 
+    line-height: 1.5;
+    margin: 50px auto;
+    padding: 35px; /* This adds 35 pixels of space (padding). */
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #79D4F7;
+}
+
+/* CSS for the customer reviews section of the page as a whole. */
+.reviews {
+    max-width: 1024px; /* Sets the max width to 1024 pixels. */
+    margin: auto; /* Centres the section in terms of x axis. */
+    text-align: center;
+}
+
+/* CSS for each review. */
+.review {
+    background-color: #f9f9f9; /* Sets background to a sort of grey. */
+    padding: 15px; /* 15 pixels of space is set. */
+    border-radius: 8px;
+    margin: 50px;
+    color: #101010; /* Text colour is black */
+}
+
+/* CSS for the paragraphs in the review sections. */
+.review p {
+    color: #101010;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* CSS H6 headers in the review sections. This is for the person's name who wrote it. */
+.review h6 {
+    color: #101010; /* Sets text to colour black */
+    margin-top: 5px;
+    font-weight: bold; /* Sets text bold */
+}
+
+/* CSS for H2 headers */
+h2 {
+    font-size: 50px;
+    padding: 20px;
+}
+
+/* CSS for the section where users can write a review. It is at the bottom */
+.review-form {
+    background-color: #FFFFFF;
+    color: #79D4F7;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 1024px;
+    margin: 40px auto;
+    text-align: center; /* Centers text in x axis */
+}
+
+/* CSS for the input box. This is where the user will be able to write a review. */
+.review-form input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    font-size: 15px;
+    border: 3px solid #79D4F7;
+    border-radius: 10px;
+}

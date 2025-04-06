@@ -1,0 +1,27 @@
+/* This is CSS for the main heading. */
+main h1 {
+    font-size: 50px; /* This sets the font size to 40 pixels */
+}
+
+/* This is the CSS for the paragraph in the home page. */
+main p {
+    font-size: 25px; /* This sets the font size to 25 pixels */
+}
+
+/* This is the CSS for the main. */
+main {
+    background-color: #FFFFFF; /*  */
+    color: #79D4F7; /* This sets the text colour to blue. */
+    text-align: center; /* This centers the main heading in terms of the x axis. */
+    padding: 25px; /* This sets a 25 pixel padding in the main. */
+    border-radius: 10px; /* This creates round corners for the main. */
+    max-width: 1024px; /* This sets the maximum width of the main to 1024 pixels. */
+    margin: 40px auto; /* This sets a margin of 40 pixels on the top and bottom and centers it on the x axis. */
+    transition: 0.5s; /* This adds a 0.5 second transition effect. */
+}
+
+/* This is the CSS for when the user hovers the mouse over the main. */
+main:hover {
+    background-color: #79D4F7; /* This is the colour for background, blue. */
+    color: #FFFFFF; /* The text colour is white. */
+}

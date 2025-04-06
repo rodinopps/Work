@@ -1,0 +1,51 @@
+/* This is CSS for the FAQ section */
+.faq {
+    max-width: 1024px; /* This sets the maximum width of the FAQ section to 1024 pixels. */
+    margin: 40px auto; /* This sets a margin of 40 pixels on the top and bottom and centers it on the x axis. */
+    padding: 20px; /* This sets a 20 pixel padding in the FAQ section. */
+    background: #FFFFFF; /* This sets the background colour to be white. */
+    color: #101010; /* This sets the text colour to black. */
+    border-radius: 10px; /* This creates round corners for the FAQ section. */
+}
+
+/* This is CSS for H1 headers in the FAQ section */
+.faq h1 {
+    text-align: center; /* This centers the text. */
+    font-size: 40px; /* This sets the font size to 40 pixels */
+    color: #101010; /* This sets the colour of the text to black. */
+    margin-bottom: 20px; /* This adds a 20 pixel margin below the headers. */
+}
+
+/* This is CSS for H2 headers in the FAQ section */
+.faq h2 {
+    font-size: 30px; /* This sets the font size to 30 pixels */
+    color: #79D4F7; /* This sets the colour of the text to blue. */
+    border-bottom: 3px solid #79D4F7; /* This adds a 3 pixel blue border at the bottom of the H2 headers. */
+    padding-bottom: 5px; /* This adds 5 pixels of padding. */
+    margin-top: 30px; /* This adds 30 pixel margin above the header. */
+}
+
+/* This is CSS for H3 headers in the FAQ section */
+.faq h3 {
+    font-size: 25px; /* This sets the font size to 25 pixels */
+    color: #101010; /* This sets the text colour to black. */
+    margin-top: 15px; /* This adds 15 pixel margin above the header. */
+    transition: 0.5s; /* This adds a 0.5 second transition effect. */
+    cursor: pointer; /* This changes the cursor to a poimter when hovering over the H3 header. */
+}
+
+/* This is CSS for H3 headers in the FAQ section when the mouse hovers over it.*/
+.faq h3:hover {
+    color: #79D4F7; /* This sets the colour of the text to blue. */
+    transform: scale(1.01); /* This enlarges the H3 header by 1%. */
+}
+
+/* This is CSS for the paragraphs in the FAQ section */
+.faq p {
+    font-size: 20px; /* This sets the font size to 25 pixels */
+    color: #101010; /* This sets the text colour to black. */
+    line-height: 1.5; /* This turns the line height 1.5 times the original. */
+    padding: 10px; /* This sets a 10 pixel padding in the FAQ section. */
+    background: #F3F3F3; /* This sets the background colour to be white. */
+    border-radius: 5px; /* This creates round corners for the FAQ section. */
+}

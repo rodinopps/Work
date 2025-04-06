@@ -1,0 +1,81 @@
+/* Some lines I have not commented due to already commenting it on another file to reduce clutter and make it easier to read. */
+/* This is CSS for the headers at the top of every page. */
+header {
+    background-color: #101010;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* This is CSS for the image in the headers at the top of every page. */
+header img {
+    width: 150px;
+    height: auto;
+    transition: 0.5s;
+    margin-left: 20px;
+}
+
+/* This is CSS for when the cursor hovers over the image (logo) in the header at the top of every page. */
+header img:hover {
+    transform: scale(1.1); /* This is the scale the logo enlarges. */
+    content: url("../images/hover_logo.png") /* Changes the blue logo to a white one. */
+}
+
+/* CSS for the website name which is next to the logo. */
+.header-name {
+    color: #79D4F7;
+    font-family: "Plaster", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/* The CSS unordered list which has the different pages for navigation.  */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 50px;
+    gap: 40px;
+    padding: 0;
+}
+
+/* CSS for the navigation links. */
+nav ul li a {
+    color: #79D4F7;
+    font-family: "Kanit", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+/* CSS for the navigation links when the cursor hovers over it. */
+nav ul li a:hover {
+    transform: scale(1.025);
+    color: #FFFFFF;
+}
+
+/* This is CSS for the body of the html file. */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #79D4F7;
+    color: #FFFFFF;
+    font-family: Arial;
+}
+
+/* CSS for the footer */
+footer {
+    background-color: #101010;
+    color: #79D4F7;
+    font-family: "Readex Pro", sans-serif;
+    text-align: center;
+}
+
+/* This is media query for screens 900px or smaller pixels. */
+@media screen and (max-width: 900px) { 
+    body {
+        font-size: 90%; /* This scales down text size to 90% for screens smaller than 900 pixels. */
+    }
+}

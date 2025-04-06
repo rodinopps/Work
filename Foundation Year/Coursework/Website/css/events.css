@@ -1,0 +1,97 @@
+/* CSS styling for main section */
+main {
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+/* CSS for events and promotions section */
+.events-and-promotions {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    color: #101010;
+}
+
+/* CSS for H2 header tags in the events and promotions section */
+.events-and-promotions h2 {
+    font-size: 30px;
+    color: #101010;
+    padding: 15px 0;
+    border-bottom: 3px solid #DDDDDD;
+}
+
+/* CSS for registration form */
+.registration-form {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+/* CSS for H3 header tags in registration from section class */
+.registration-form h3 {
+    font-size: 25px;
+    color: #101010;
+    margin-bottom: 15px;
+}
+
+/* CSS for label in registration form section */
+.registration-form label {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #333333;
+}
+
+/* CSS styling for inputs and select forms in the registration form section */
+.registration-form input[type="text"], .registration-form input[type="email"], .registration-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* CSS for button in registration form section */
+.registration-form button {
+    background-color: #79D4F7;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* CSS when the cursor hovers over the button. Styling */
+.registration-form button:hover {
+    background-color: #2CC4FF;
+}
+
+#form-messages {
+    font-weight: bold;
+}
+
+/* Responsive CSS styling for screens 768 pixels wide or below */
+@media screen and (max-width: 768px) {
+    .events-and-promotions {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .registration-form {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .events-and-promotions h2 {
+        font-size: 25px;
+    }
+}

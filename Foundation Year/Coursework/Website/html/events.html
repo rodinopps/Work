@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!--This declares the version of HTML.-->
+<html lang="en">
+
+<!--Rodin Opuz-->
+
+<head>
+    <meta charset="UTF-8"> <!--This is for SEO. It is on all pages and sets character encoding to UTF-8.-->
+    <meta name="description" content="Discover audiobooks, news, deals and other items. Check it out!"> <!--This is a description of SEO and improves searching.-->
+    <meta name="keywords" content="audiobooks, books, listening parties, podcasts, referrals, events"> <!--These are SEO keywords for searching.-->
+    <meta name = "author" content="Online Audio Books"> <!--This sets the author of the website.-->
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="../css/main.css"> <!--This links to the main stylesheet.-->
+    <link rel="stylesheet" href="../css/events.css"> <!--This links to the events stylesheet.-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plaster&family=Kanit&family=Readex+Pro&display=swap">
+    <title>Online Audio Books - Events and Promotions</title> <!--This is the name of the tab on the browser.-->
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../images/logo.png" alt="Online Audio Books logo">
+        </a>
+        <div class="header-name">Online<br>Audio<br>Books</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="events-and-promotions"> <!--This is the section of the events and promotions.-->
+            <h2>Referral Programs</h2>
+            <p>Invite others with the referral link below to recieve additional discounts!</p>
+            <button>Referral Link</button>
+            <h2>Podcasts</h2>
+            <p>Join our podcasts! Check the News in the navigation header to find out more!</p>
+            <h2>Interviews</h2>
+            <p>We plan to interview authors of your favourite books! Check soon!</p>
+            <h2>Listening Parties</h2>
+            <p>We host daily listening parties! Come and check it out for yourself!</p>
+            <h2>Events</h2>
+            <p>New events and promotions daily! Check News for more information!</p>
+
+            <section class="registration-form"> <!--This is the section for the registration where the user can register.-->
+                <h3>Sign up for updates on events!</h3>
+                <form id="event-form"> <!--This is the form for registering events.-->
+
+                    <!--Field for Name in the form.-->
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter full name here" required><br><br>
+                    
+                    <!--Field for Email in the form.-->
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email here" required><br><br>
+
+                    <!--Checkboxes for the events and choices.-->
+                    <label for="events">Tick events you want to be updated on</label><br>
+                    <input type="checkbox" id="referral" name="events" value="Referral Program">
+
+                    <label for="referral">Referral Program</label><br>
+
+                    <input type="checkbox" id="podcast" name="events" value="Podcast">
+                    <label for="podcast">Podcasts</label><br>
+
+                    <input type="checkbox" id="interviews" name="events" value="Interviews">
+                    <label for="interviews">Interviews</label><br>
+
+                    <input type="checkbox" id="listening" name="events" value="Listening Parties">
+                    <label for="listening">Listening Parties</label><br><br>
+
+                    <button type="submit">Submit</button> <!--The submit button for events after registering.-->               
+                </form>
+                <div id="form-messages"></div> <!--Message after register.-->
+            </section>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Online Audio Books</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--jQuery library-->
+    <script src="../js/register.js"></script> <!-- Custom JS script for handling.-->
+
+</body>
+</html>

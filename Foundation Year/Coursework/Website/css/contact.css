@@ -1,0 +1,57 @@
+/* CSS for the contact us section. */
+.contact-us {
+    max-width: 1024px; /* Width of section is 1024 pixels */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Background colour is white */
+    color: #101010;
+    border-radius: 10px;
+    text-align: center; /* Centers the text in the contact section */
+}
+
+/* CSS for the form */
+form {
+    display: flex; /* This is a flexbox to arrange the elements */
+    flex-direction: column; /* This arranages the elements vertically */
+    gap: 15px; /* Adds a 15 pixel gap between the elements in the form */
+}
+
+/* CSS for the labels in the elements */
+label {
+    font-size: 20px; /* Font size is 20 pixels */
+    font-weight: bold;
+    color: #101010;
+    text-align: left; /* Aligns the label to the left */
+}
+
+/* CSS for the input, select and text area fields */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC; /* Adds a border around the fields */
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* CSS for the button */
+button {
+    background-color: #101010;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px; /* Creates round corners */
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* CSS when the cursor hovers over the button */
+button:hover {
+    background-color: #79D4F7;
+    color: #101010;
+}
+
+/* CSS for the message after the form is submitted */
+#success-message {
+    font-weight: bold;
+}

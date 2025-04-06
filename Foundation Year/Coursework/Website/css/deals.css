@@ -1,0 +1,83 @@
+/* This is CSS for main section. It will style it. */
+main {
+    text-align: center; /* Centers the content in the main */
+    padding: 25px;
+    max-width: 1024px; /* Max width is 1024 pixels */
+    margin: auto; /* Centers the main in terms of the x axis. */
+}
+
+/* CSS styling for the paragraohs tags in the deals html file */
+p {
+    font-size: 20px;
+    color: #101010;
+    line-height: 1.5; /* Line spacing */
+}
+
+/* CSS for the deals header section */
+.deals-header {
+    margin-bottom: 35px; /* Adds 35 pixels of space below the header */
+    font-size: 45px;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #101010;
+    color: white;
+}
+
+/* CSS for H1 header tags in the deals header section */
+.deals-header h1 {
+    font-size: 45px;
+}
+
+/* CSS for the deals section. Styling. */
+.deals-section {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 30px;
+    color: #101010;
+    display: flex;
+    flex-direction: column; /* This arranges the items in a column. So in terms of y axis. */
+    gap: 25px;
+    border-radius: 10px;
+}
+
+/* CSS for each deal. */
+.deal {
+    font-size: 25px; /* Font size is 25 pixels. */
+    background-color: #DAF5FF;
+    padding: 20px;
+    border-radius: 10px; /* Rounds the corner. */
+}
+
+/* CSS styling for the buttons. */
+button {
+    background-color: #101010;
+    color: #FFFFFF;
+    padding: 10px 15px; /* This is padding in the button. */
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* CSS styling for when the cursor hovers over the button. */
+button:hover {
+    background-color: #FFFFFF;
+    color: #101010
+}
+
+/* CSS styling for the loyalty program section */
+.loyalty-program {
+    padding: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 40px;
+    color: #101010;
+    background-color: #FFFFFF;
+}
+
+/* CSS styling for the H3 header tags in the loyalty program section. */
+.loyalty-program h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #79D4F7;
+}

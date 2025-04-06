@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--This links the css pages and fonts I have used in the website.-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover audiobooks, news, deals and other items. Check it out!">
+    <meta name="keywords" content="audiobooks, books, listening parties, podcasts, referrals, events">
+    <meta name = "author" content="Online Audio Books">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0"> <!--This is the meta element for the page to control the viewport for media queries.-->
+    <link rel="stylesheet" href="../css/main.css"> <!--This links to the main stylesheet.-->
+    <link rel="stylesheet" href="../css/catalogue.css"> <!--This links to the catalogue stylesheet.-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plaster&family=Kanit&family=Readex+Pro&display=swap"> <!--These are Google Fonts that are external.-->
+</head>
+
+<body>
+    <!--This is the header section where the user can navigate to different pages.-->
+    <header>
+        <!--When the logo is clicked, the user is navigated to the home page.-->
+        <a href="index.html">
+            <img src="../images/logo.png" alt="Online Audio Books logo">
+        </a>
+        <div class="header-name">Online<br>Audio<br>Books</div>
+        
+        <!--This is the different pages represented in a list with links. It is the navigation menu-->
+        <nav>
+            <ul>
+                <!--Each item in the list represnts a page that the user can navigate to.-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--This is the catalogue so the main content.-->
+    <main>
+        <section class="catalogue">
+            <h2>Audiobook Catalogue</h2>
+
+            <!--This is the catalogue table where each book has the 6 headers, Category, Image, Title, Author, Price and Details.-->
+            <table>
+                <!--This groups the header content.-->
+                <thead>
+                    <!--This defines a row and the headers are one row and each book is represented by a row with each of the headers.-->
+                    <tr>
+                        <th>Category</th> <!--This is the first column (Audiobook categories)-->
+                        <th>Image</th> <!--This is the second column (Audiobook cover)-->
+                        <th>Title</th> <!--This is the third column (Audiobook title)-->
+                        <th>Author</th> <!--This is the fourth column (Audiobook author)-->
+                        <th>Price</th> <!--This is the fifth column (Audiobook price)-->
+                        <th>Details</th> <!--This is the sixth column (Audiobook details)-->
+                    </tr>
+                </thead>
+
+                <!--This groups the body content. It contains the actual books and the information.-->
+                <tbody>
+                    <!--This is the first book and second row.-->
+                    <tr>
+                        <!--This defines a cell in the table.-->
+                        <td>Fiction</td> <!--Category-->
+                        <td><img src="../images/great-gatsby.jpg" alt="The Great Gatsby cover" class="book-image"></td> <!--Image-->
+                        <td>The Great Gatsby</td> <!--Title-->
+                        <td>F. Scott Fitzgerald</td> <!--Author-->
+                        <td>£7.99</td> <!--Price-->
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about Jay Gatsby, a self-made millionaire.</p> <!--Summary of audiobook-->
+                            <p><strong>Author</strong> - F. Scott Fitzgerald, an American novelist, essayist and short story writer</p> <!--Description of author-->
+                            <p><strong>Reviews</strong> - 4/5</p> <!--Reviews of audiobook-->
+                            <button class="buy-button">Buy Now</button> <!--Button to buy the audiobook-->
+                        </td>
+                    </tr>
+
+                    <!--This is repeated again with the other books. Each of them are a row.-->
+                    <tr>
+                        <td>Fiction</td>
+                        <td><img src="../images/mockingbird.jpg" alt="How to Kill a Mockingbird cover" class="book-image"></td>
+                        <td>To Kill a Mockingbird</td>
+                        <td>Harper Lee</td>
+                        <td>£9.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about a person trying to prove the innocence of Tom Robinson, a black man in 1930s Alabama.</p>
+                            <p><strong>Author</strong> - An American novelist who won the 1961 Pulitzer Prize.</p>
+                            <p><strong>Reviews</strong> - 4.5/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Romance</td>
+                        <td><img src="../images/pride-and-prejudice.jpg" alt="Pride and Prejudice cover" class="book-image"></td>
+                        <td>Pride and Prejudice</td>
+                        <td>Jane Austen</td>
+                        <td>£8.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A love story about Elizabeth Bennet and Mr. Darcy who both have to overcome their biases to end up together.</p>
+                            <p><strong>Author</strong> - An English novelist in the 18th century.</p>
+                            <p><strong>Reviews</strong> - 4.86/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Romance</td>
+                        <td><img src="../images/jane-eyre.jpg" alt="Jane Eyre cover" class="book-image"></td>
+                        <td>Jane Eyre</td>
+                        <td>Charlotte Bronte</td>
+                        <td>£7.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about the orphaned Jane Eyre's journey from a harsh childhood to finding love and independence.</p>
+                            <p><strong>Author</strong> - An English novelist who published Jane Eyre under the male pseudonym Currer Bell.</p>
+                            <p><strong>Reviews</strong> - 4.97/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Romance</td>
+                        <td><img src="../images/outlander.jpg" alt="Outlander cover" class="book-image"></td>
+                        <td>Outlander</td>
+                        <td>Diana Gabaldon</td>
+                        <td>£12.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about a 20th-century British Nurse Claire Randall as she time travels to 18th-century Scotland, where she finds love.</p>
+                            <p><strong>Author</strong> - An American author and television author.</p>
+                            <p><strong>Reviews</strong> - 3.98/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Romance</td>
+                        <td><img src="../images/gone-with-the-wind.jpg" alt="Gone with the Wind cover" class="book-image"></td>
+                        <td>Gone with the Wind</td>
+                        <td>Margaret Mitchell</td>
+                        <td>£9.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about Scarlett O'Hara during the Civil War and her love affairs with Ashley Wilkes and Rhett Butler.</p>
+                            <p><strong>Author</strong> - An American novelist and journalist.</p>
+                            <p><strong>Reviews</strong> - 4/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fantasy</td>
+                        <td><img src="../images/game-of-thrones.jpg" alt="A Game of Thrones cover" class="book-image"></td>
+                        <td>A Game of Thrones</td>
+                        <td>George R.R. Martin</td>
+                        <td>£12.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about several noble houses of Westeros and a complicated, multiparty war for the Iron Throne that features conflicts, alliances and betrayals.</p>
+                            <p><strong>Author</strong> - An American author, television writer and television producer.</p>
+                            <p><strong>Reviews</strong> - 4.65/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fantasy</td>
+                        <td><img src="../images/lord-of-the-rings.jpg" alt="Lord of the Rings" class="book-image"></td>
+                        <td>Lord of the Rings</td>
+                        <td>J.R.R. Tolkien</td>
+                        <td>£13.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about hobbit Frodo Baggins as he embarks on a perilous quest to destroy the One Ring.</p>
+                            <p><strong>Author</strong> - An English writer and philogist.</p>
+                            <p><strong>Reviews</strong> - 4.99/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fantasy</td>
+                        <td><img src="../images/narnia.jpg" alt="The Chronicles of Narnia cover" class="book-image"></td>
+                        <td>The Chronicles of Narnia</td>
+                        <td>C.S. Lewis</td>
+                        <td>£11.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about the magical world of Narnia, where children from our world are transported to fight against evil.</p>
+                            <p><strong>Author</strong> - A British writer, literary scholar, and Anglican lay theologian./p>
+                            <p><strong>Reviews</strong> - 3.98/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fantasy</td>
+                        <td><img src="../images/the-gunslinger.jpg" alt="The Gunslinger cover" class="book-image"></td>
+                        <td>The Gunslinger</td>
+                        <td>Stephen King</td>
+                        <td>£8.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about Roland Deschain, who is tracking an enigmatic magician known only as the man in black.</p>
+                            <p><strong>Author</strong> - An American author.</p>
+                            <p><strong>Reviews</strong> - 4.13/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fantasy</td>
+                        <td><img src="../images/dune.jpg" alt="Dune cover" class="book-image"></td>
+                        <td>Dune</td>
+                        <td>Frank Herbert</td>
+                        <td>£10.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about Paul Atreides set on the desert planet Arrakis.</p>
+                            <p><strong>Author</strong> - An American science-fiction author.</p>
+                            <p><strong>Reviews</strong> - 4/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fantasy</td>
+                        <td><img src="../images/enders-game.jpg" alt="Ender's Game cover" class="book-image"></td>
+                        <td>Ender's Game</td>
+                        <td>Orson Scott Card</td>
+                        <td>£8.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about a young boy, Ender Wiggin, who is sent to a training academy named Battle School, built to train people to become soldiers..</p>
+                            <p><strong>Author</strong> - An American writer</p>
+                            <p><strong>Reviews</strong> - 4.23/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mystery</td>
+                        <td><img src="../images/rebecca.jpg" alt="Rebecca cover" class="book-image"></td>
+                        <td>Rebecca</td>
+                        <td>Daphne du Maurier</td>
+                        <td>£5.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about a heroine who lives in Europe with her husband.</p>
+                            <p><strong>Author</strong> - An English novelist, biographer and playwright.</p>
+                            <p><strong>Reviews</strong> - 4.45/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mystery</td>
+                        <td><img src="../images/angels-and-demons.jpg" alt="Angels & Demons cover" class="book-image"></td>
+                        <td>Angels & Demons</td>
+                        <td>Dan Brown</td>
+                        <td>£8.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about Robert Langdon who races against time to prevent the Vatican from being destroyed by a stolen antimatter bomb.</p>
+                            <p><strong>Author</strong> - An American author.</p>
+                            <p><strong>Reviews</strong> - 3.45/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mystery</td>
+                        <td><img src="../images/gone-girl.jpg" alt="Gone Girl cover" class="book-image"></td>
+                        <td>Gone Girl</td>
+                        <td>Gillian Flynn</td>
+                        <td>£8.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about Nick and Amy Dunne, whose marriage unravels after Amy disappears on their fifth anniversary.</p>
+                            <p><strong>Author</strong> - An American author, screenwriter and producer</p>
+                            <p><strong>Reviews</strong> - 3.73/5 </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mystery</td>
+                        <td><img src="../images/shutter-island.jpg" alt="Shutter Island cover" class="book-image"></td>
+                        <td>Shutter Island</td>
+                        <td>Dennis Lehane</td>
+                        <td>£6.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about a US Marshal who goes to an isolated hospital for the criminally insane to investigate the disappearance of a patient.</p>
+                            <p><strong>Author</strong> - An American author.</p>
+                            <p><strong>Reviews</strong> - 3/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Crime</td>
+                        <td><img src="../images/and-then-there-were-none.jpg" alt="And Then There Were None cover" class="book-image"></td>
+                        <td>And Then There Were None</td>
+                        <td>Agatha Christie</td>
+                        <td>£3.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about ten strangers being lured to a remote island.</p>
+                            <p><strong>Author</strong> - An English author.</p>
+                            <p><strong>Reviews</strong> - 4.46/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Crime</td>
+                        <td><img src="../images/godfather.jpg" alt="The Godfather cover" class="book-image"></td>
+                        <td>The Godfather</td>
+                        <td>Mario Puzo</td>
+                        <td>£5.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about the Corleone family, a powerful New York Mafia family.</p>
+                            <p><strong>Author</strong> - An American author and screenwriter.</p>
+                            <p><strong>Reviews</strong> - 4/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Crime</td>
+                        <td><img src="../images/bone-collector.jpg" alt="The Bone Collector cover" class="book-image"></td>
+                        <td>The Bone Collector</td>
+                        <td>Jeffery Deaver</td>
+                        <td>£5.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about investigations of brutal kidnappings and murders in New York City, leaving bone-related clues.</p>
+                            <p><strong>Author</strong> - An American mystery and crime writer.</p>
+                            <p><strong>Reviews</strong> - 4.3/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Humour</td>
+                        <td><img src="../images/hitchhikers-guide.jpg" alt="The Ultimage Hitchhiker's Guide to the Galaxy cover" class="book-image"></td>
+                        <td>The Ultimate Hitchhiker's Guide to the Galaxy</td>
+                        <td>Douglas Adams</td>
+                        <td>£1.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story the misadventures of the last surviving Earth man, Arthur Dent.</p>
+                            <p><strong>Author</strong> - An English author, humourist, and screenwriter.</p>
+                            <p><strong>Reviews</strong> - 4.82/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Humour</td>
+                        <td><img src="../images/catch-22.jpg" alt="Catch-22 cover" class="book-image"></td>
+                        <td>Catch-22</td>
+                        <td>Joseph Heller</td>
+                        <td>£2.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story John Yossarian, an American bombardier stationed on an island during WW2.</p>
+                            <p><strong>Author</strong> - An American author of novels, short stories, plays, and screenplays.</p>
+                            <p><strong>Reviews</strong> - 4.11/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Humour</td>
+                        <td><img src="../images/the-princess-bride.jpg" alt="The Princess Bride cover" class="book-image"></td>
+                        <td>The Princess Bride</td>
+                        <td>William Goldman</td>
+                        <td>£6.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about a swashbuckling farmhand named Westley.</p>
+                            <p><strong>Author</strong> - An American novelist, playwright, and screenwriter.</p>
+                            <p><strong>Reviews</strong> - 4/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Horror</td>
+                        <td><img src="../images/the-shining.jpg" alt="The Shining cover" class="book-image"></td>
+                        <td>The Shining</td>
+                        <td>Stephen King</td>
+                        <td>£8.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about Jack Torrance and his psychic son Danny.</p>
+                            <p><strong>Author</strong> - An American author.</p>
+                            <p><strong>Reviews</strong> - 4.12/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Horror</td>
+                        <td><img src="../images/it.jpg" alt="It cover" class="book-image"></td>
+                        <td>It</td>
+                        <td>Stephen King</td>
+                        <td>£7.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about seven children terrorised by a shape-shifting, ancient entity that preys on the fears of its victims..</p>
+                            <p><strong>Author</strong> - An American author.</p>
+                            <p><strong>Reviews</strong> - 3.14/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Horror</td>
+                        <td><img src="../images/dracula.jpg" alt="Dracula cover" class="book-image"></td>
+                        <td>Dracula</td>
+                        <td>Bram Stoker</td>
+                        <td>£8.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about a vampire in Eastern European, Transylvania.</p>
+                            <p><strong>Author</strong> - An Irish author.</p>
+                            <p><strong>Reviews</strong> - 4.14/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Non-Fiction</td>
+                        <td><img src="../images/elements-of-style.jpg" alt="The Elements of Style cover" class="book-image"></td>
+                        <td>The Elements of Style</td>
+                        <td>William Strunk Jr.</td>
+                        <td>£10.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A book about promoting clear and concise language.</p>
+                            <p><strong>Author</strong> - An American professor of English.</p>
+                            <p><strong>Reviews</strong> - 3.12/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Non-Fiction</td>
+                        <td><img src="../images/sapiens.jpg" alt="Sapiens: A Brief History of Humankind cover" class="book-image"></td>
+                        <td>Sapiens: A Brief History of Humankind</td>
+                        <td>Yuval Noah Harari</td>
+                        <td>£12.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A book about evolution.</p>
+                            <p><strong>Author</strong> - An medievalist, military historian, public intellectual, and popular science writer.</p>
+                            <p><strong>Reviews</strong> - 1/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Non-Fiction</td>
+                        <td><img src="../images/educated.jpg" alt="Educated cover" class="book-image"></td>
+                        <td>Educated</td>
+                        <td>Tara Westover</td>
+                        <td>£10.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A memoir about life in rural Idaho.</p>
+                            <p><strong>Author</strong> - An American memoirist, essayist and historian.</p>
+                            <p><strong>Reviews</strong> - 3.12/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Non-Fiction</td>
+                        <td><img src="../images/becoming.jpg" alt="Becoming cover" class="book-image"></td>
+                        <td>Becoming</td>
+                        <td>Michelle Obama</td>
+                        <td>£11.49</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A journey from a young girl in Chicago to First Lady.</p>
+                            <p><strong>Author</strong> - An American attorney and author who served as the first lady of the Unitedd States from 2009 to 2017.</p>
+                            <p><strong>Reviews</strong> - 4.12/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>History</td>
+                        <td><img src="../images/john-adams.jpg" alt="John Adams cover" class="book-image"></td>
+                        <td>John Adams</td>
+                        <td>David McCullough</td>
+                        <td>£13.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A biography about the second U.S. President.</p>
+                            <p><strong>Author</strong> - An American popular historian.</p>
+                            <p><strong>Reviews</strong> - 4.45/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Self Improvement</td>
+                        <td><img src="../images/think-and-grow-rich.jpg" alt="Think and Grow Rich cover" class="book-image"></td>
+                        <td>Think and Grow Rich</td>
+                        <td>Napolean Hill</td>
+                        <td>£10.99</td>
+                        <td class="details-column"d>
+                            <p><strong>Summary</strong> - Outlines success and wealth creation.</p>
+                            <p><strong>Author</strong> - An American self-help author.</p>
+                            <p><strong>Reviews</strong> - 3.12/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Self Improvement</td>
+                        <td><img src="../images/atomic-habits.jpg" alt="Atomic Habits cover" class="book-image"></td>
+                        <td>Atomic Habits</td>
+                        <td>James Clear</td>
+                        <td>£10.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - Building good habits and breaking bad ones.</p>
+                            <p><strong>Author</strong> - An American writer.</p>
+                            <p><strong>Reviews</strong> - 4.11/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Self Improvement</td>
+                        <td><img src="../images/power-of-now.jpg" alt="The Power of Now cover" class="book-image"></td>
+                        <td>The Power of Now</td>
+                        <td>Eckhart Tolle</td>
+                        <td>£9.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - Emphasises the importance of living in the present moment, free from the mind's preoccupation with the past and future.</p>
+                            <p><strong>Author</strong> - A German spiritual teacher and self-help author.</p>
+                            <p><strong>Reviews</strong> - 3.33/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Self Improvement</td>
+                        <td><img src="../images/win-friends.jpg" alt="How to Win Friends and Influence People cover" class="book-image"></td>
+                        <td>How to Win Friends and Influence People</td>
+                        <td>Dale Carnegie</td>
+                        <td>£7.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - Self help book.</p>
+                            <p><strong>Author</strong> - An American writer and teacher.</p>
+                            <p><strong>Reviews</strong> - 4/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Children</td>
+                        <td><img src="../images/harry-potter-philospher.jpg" alt="Harry Potter and the Philospher's Stone cover" class="book-image"></td>
+                        <td>Harry Potter and the Philospher's Stone</td>
+                        <td>J.K. Rowling</td>
+                        <td>£8.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about Harry Potter where he attends Hogwarts, a school of magic.</p>
+                            <p><strong>Author</strong> - A British author and philanthropist.</p>
+                            <p><strong>Reviews</strong> - 4/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Children</td>
+                        <td><img src="../images/charlottes-web.png" alt="Charlotte's Web cover" class="book-image"></td>
+                        <td>Charlotte's Web</td>
+                        <td>E.B. White</td>
+                        <td>£6.99</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about a pig named Wilbur and his friendship with a spider.</p>
+                            <p><strong>Author</strong> - An American writer.</p>
+                            <p><strong>Reviews</strong> - 5/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Children</td>
+                        <td><img src="../images/matilda.jpg" alt="Matilda cover" class="book-image"></td>
+                        <td>Matilda</td>
+                        <td>Roald Dahl</td>
+                        <td>£7.49</td>
+                        <td class="details-column">
+                            <p><strong>Summary</strong> - A story about an intelligent girl with psychic powers.</p>
+                            <p><strong>Author</strong> - A British author.</p>
+                            <p><strong>Reviews</strong> - 4.39/5 </p>
+                            <button class="buy-button">Buy Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!--This is the footer section with copyright information.-->
+    <footer> <!--This is the footer section-->
+        <p>&copy; 2025 Online Audio Books</p> <!--The copyright information-->
+    </footer>
+</body>
+
+</html>
