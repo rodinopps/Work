@@ -1,0 +1,19 @@
+        INP 
+        STA X 
+        LDA COUNT 
+        STA RESULT 
+INDICE  LDA X 
+        BRZ OUTPUT 
+        LDA RESULT 
+        ADD RESULT 
+        STA RESULT 
+        LDA X 
+        SUB COUNT 
+        STA X 
+        BRP INDICE 
+OUTPUT  LDA RESULT 
+        OUT 
+        HLT
+RESULT  DAT 0
+COUNT   DAT 1
+X       DAT

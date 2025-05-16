@@ -1,0 +1,23 @@
+        INP 
+        STA X 
+        LDA ZERO 
+        STA RESULT 
+        LDA X 
+        STA MULTI 
+SQUARE  LDA MULTI 
+        BRZ OUTPUT 
+        LDA RESULT 
+        ADD X 
+        STA RESULT 
+        LDA MULTI 
+        SUB COUNT 
+        STA MULTI
+        BRP SQUARE 
+OUTPUT  LDA RESULT 
+        OUT
+        HLT
+RESULT  DAT 0 
+X       DAT 
+ZERO    DAT 0 
+COUNT   DAT 1
+MULTI   DAT

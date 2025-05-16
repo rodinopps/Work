@@ -1,0 +1,19 @@
+	INP
+        STA X
+        INP
+        STA Y
+DIVIDE  LDA X
+        BRZ OUTPUT
+        SUB Y
+        STA X
+        LDA RESULTS
+        ADD COUNT
+        STA RESULTS
+        BRP DIVIDE
+OUTPUT  LDA RESULTS
+        OUT
+        HLT
+RESULTS DAT 0
+COUNT   DAT 1
+X       DAT
+Y       DAT
